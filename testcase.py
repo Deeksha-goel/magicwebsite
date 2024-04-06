@@ -21,11 +21,11 @@ try:
     # Wait for the h1 element with text containing "Magic Website" to be present
     h1_element = WebDriverWait(driver, 10).until(
         EC.presence_of_element_located(
-            (By.XPATH, "//h1[contains(., 'Magic Website')]"))
+            (By.XPATH, "//h1[contains(., 'Simple Website')]"))
     )
 
     # If the element is found, print success message
-    print("Test Passed: Found h1 tag containing 'Magic Website'")
+    print("Test Passed: Found h1 tag containing 'Simple Website'")
 except Exception as e:
     # If the element is not found, print failure message
     print("Test Failed:", e)
